@@ -907,16 +907,35 @@ button { font: inherit; background: none; border: 0; color: inherit; cursor: poi
   display: flex; align-items: center; justify-content: center;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  font-family: var(--font-display);
-  font-weight: 500;
-  font-size: clamp(1rem, 1.3vw, 1.4rem);
-  letter-spacing: 0.04em;
-  color: var(--fg-muted);
-  transition: color .35s ease, background .35s ease;
+  padding: 24px 32px;
+  position: relative;
+  overflow: hidden;
+  background: var(--bg-2);
+  transition: background .4s ease;
 }
-.brand-cell:hover {
+.brand-cell::before {
+  content: '';
+  position: absolute; inset: 0;
+  background: radial-gradient(circle at center, rgba(0,224,255,0.08), transparent 65%);
+  opacity: 0;
+  transition: opacity .5s ease;
+  z-index: 0;
+}
+.brand-cell:hover { background: rgba(255,255,255,0.015); }
+.brand-cell:hover::before { opacity: 1; }
+.brand-cell svg {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  max-height: 44px;
+  color: rgba(255,255,255,0.55);
+  transition: color .4s ease, transform .5s cubic-bezier(.2,.8,.2,1);
+}
+.brand-cell:hover svg {
   color: var(--accent);
-  background: rgba(0,224,255,0.04);
+  transform: scale(1.06);
 }
 
 /* ============================================
