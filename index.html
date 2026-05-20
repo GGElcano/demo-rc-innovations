@@ -253,61 +253,132 @@
 
 <!-- HORIZONTAL SCROLL — Showcase -->
 <section class="showcase" id="showcase">
-  <div class="showcase__pin">
-    <div class="showcase__intro">
-      <div class="section-label section-label--light">
-        <span class="section-label__num">04</span>
-        <span class="section-label__txt">Plataformas destacadas</span>
-      </div>
-      <h2 class="showcase__title">Construido para misiones reales</h2>
+  <div class="showcase__header container">
+    <div class="section-label">
+      <span class="section-label__num">04</span>
+      <span class="section-label__txt">Plataformas destacadas</span>
     </div>
+    <div class="showcase__head-row">
+      <h2 class="section-title"><span data-split>Construido para</span> <span data-split class="muted">misiones reales.</span></h2>
+      <div class="showcase__counter">
+        <span id="showcaseCurrent">01</span>
+        <span class="showcase__sep">/</span>
+        <span id="showcaseTotal">05</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="showcase__pin">
     <div class="showcase__track" id="showcaseTrack">
       <article class="prod">
-        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1524143986875-3b098d78b363?w=1400&q=80')"></div>
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1524143986875-3b098d78b363?w=1600&q=80')">
+          <span class="prod__index">01</span>
+        </div>
         <div class="prod__info">
-          <span class="prod__sku">UAV-PRO/01</span>
+          <span class="prod__sku">UAV-PRO/01 · MAPPING</span>
           <h3>Industrial Mapping</h3>
-          <p>Fotogrametría y cartografía RTK con autonomía hasta 55 min.</p>
-          <span class="prod__price">Desde 7.490 €</span>
+          <p>Fotogrametría y cartografía RTK con autonomía hasta 55 min. Configuración llave en mano para topógrafos y operadores AESA.</p>
+          <ul class="prod__specs">
+            <li><span>Payload</span><strong>RGB 45MP + RTK</strong></li>
+            <li><span>Autonomía</span><strong>55 min</strong></li>
+            <li><span>Precisión</span><strong>± 2 cm</strong></li>
+            <li><span>Clase EASA</span><strong>C2 / C5</strong></li>
+          </ul>
+          <div class="prod__foot">
+            <span class="prod__price">Desde <strong>7.490 €</strong></span>
+            <a href="#" class="prod__cta">Ver ficha técnica →</a>
+          </div>
         </div>
       </article>
+
       <article class="prod">
-        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1506947411487-a56738267384?w=1400&q=80')"></div>
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1506947411487-a56738267384?w=1600&q=80')">
+          <span class="prod__index">02</span>
+        </div>
         <div class="prod__info">
-          <span class="prod__sku">UAV-PRO/02</span>
+          <span class="prod__sku">UAV-PRO/02 · THERMAL</span>
           <h3>Thermal Inspection</h3>
-          <p>Cámara radiométrica + zoom 32× para inspección de redes.</p>
-          <span class="prod__price">Desde 12.200 €</span>
+          <p>Cámara radiométrica + zoom óptico 32× para inspección de redes eléctricas, parques fotovoltaicos y cubiertas industriales.</p>
+          <ul class="prod__specs">
+            <li><span>Payload</span><strong>IR 640×512 + Zoom 32×</strong></li>
+            <li><span>Autonomía</span><strong>42 min</strong></li>
+            <li><span>Sensibilidad</span><strong>&lt; 50 mK</strong></li>
+            <li><span>Clase EASA</span><strong>C2</strong></li>
+          </ul>
+          <div class="prod__foot">
+            <span class="prod__price">Desde <strong>12.200 €</strong></span>
+            <a href="#" class="prod__cta">Ver ficha técnica →</a>
+          </div>
         </div>
       </article>
+
       <article class="prod">
-        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=1400&q=80')"></div>
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=1600&q=80')">
+          <span class="prod__index">03</span>
+        </div>
         <div class="prod__info">
-          <span class="prod__sku">UAV-PRO/03</span>
-          <h3>Heavy Lift</h3>
-          <p>Hexacóptero de carga útil 15 kg para operaciones logísticas.</p>
-          <span class="prod__price">Bajo presupuesto</span>
+          <span class="prod__sku">UAV-PRO/03 · HEAVY LIFT</span>
+          <h3>Heavy Lift Hexa</h3>
+          <p>Hexacóptero industrial con carga útil de 15 kg para operaciones logísticas, sembrado y entrega especializada.</p>
+          <ul class="prod__specs">
+            <li><span>Carga útil</span><strong>15 kg</strong></li>
+            <li><span>Autonomía</span><strong>28 min (carga máx)</strong></li>
+            <li><span>Frame</span><strong>Fibra carbono 1.350 mm</strong></li>
+            <li><span>Clase EASA</span><strong>C6</strong></li>
+          </ul>
+          <div class="prod__foot">
+            <span class="prod__price"><strong>Bajo presupuesto</strong></span>
+            <a href="#" class="prod__cta">Solicitar propuesta →</a>
+          </div>
         </div>
       </article>
+
       <article class="prod">
-        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1400&q=80')"></div>
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1600&q=80')">
+          <span class="prod__index">04</span>
+        </div>
         <div class="prod__info">
-          <span class="prod__sku">UAV-PRO/04</span>
+          <span class="prod__sku">UAV-PRO/04 · FPV</span>
           <h3>FPV Racing Build</h3>
-          <p>Montaje a medida con frame de fibra y motores T-Motor F60.</p>
-          <span class="prod__price">Desde 1.890 €</span>
+          <p>Montaje a medida con frame de fibra y motores T-Motor F60. Pre-tuneado y testado en banco antes de la entrega.</p>
+          <ul class="prod__specs">
+            <li><span>Motores</span><strong>T-Motor F60 PRO V</strong></li>
+            <li><span>ESC</span><strong>Hobbywing XRotor 60A</strong></li>
+            <li><span>FC</span><strong>Betaflight 4.5</strong></li>
+            <li><span>Peso</span><strong>485 g sin batería</strong></li>
+          </ul>
+          <div class="prod__foot">
+            <span class="prod__price">Desde <strong>1.890 €</strong></span>
+            <a href="#" class="prod__cta">Configurar build →</a>
+          </div>
         </div>
       </article>
+
       <article class="prod">
-        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=1400&q=80')"></div>
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=1600&q=80')">
+          <span class="prod__index">05</span>
+        </div>
         <div class="prod__info">
-          <span class="prod__sku">UAV-PRO/05</span>
+          <span class="prod__sku">UAV-PRO/05 · SAR</span>
           <h3>Survey & SAR</h3>
-          <p>Configuración búsqueda y rescate con cámara dual visual + IR.</p>
-          <span class="prod__price">Consultar</span>
+          <p>Configuración búsqueda y rescate con cámara dual visual + IR, altavoz integrado y foco LED de alta intensidad.</p>
+          <ul class="prod__specs">
+            <li><span>Payload</span><strong>Dual EO/IR + altavoz</strong></li>
+            <li><span>Autonomía</span><strong>38 min</strong></li>
+            <li><span>Alcance</span><strong>8 km HD link</strong></li>
+            <li><span>Clase EASA</span><strong>C5</strong></li>
+          </ul>
+          <div class="prod__foot">
+            <span class="prod__price"><strong>Consultar</strong></span>
+            <a href="#" class="prod__cta">Solicitar propuesta →</a>
+          </div>
         </div>
       </article>
     </div>
+  </div>
+
+  <div class="showcase__progress container">
+    <div class="showcase__progress-bar"><div class="showcase__progress-fill" id="showcaseProgress"></div></div>
   </div>
 </section>
 

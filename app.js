@@ -301,28 +301,38 @@ function initCatCards() {
 }
 
 /* --------------------------------------------
-   HORIZONTAL SHOWCASE
+   HORIZONTAL SHOWCASE — pin + scroll + counter + progress
 -------------------------------------------- */
 function initHorizontalShowcase() {
   const track = document.getElementById('showcaseTrack');
   if (!track) return;
-  if (window.innerWidth < 900) return;
+  if (window.innerWidth < 1024) return;
 
-  const totalWidth = track.scrollWidth;
-  const viewport = window.innerWidth;
-  const distance = totalWidth - viewport + 80;
+  const cards = gsap.utils.toArray('.prod', track);
+  const totalCards = cards.length;
+  const currentEl = document.getElementById('showcaseCurrent');
+  const totalEl = document.getElementById('showcaseTotal');
+  const progressFill = document.getElementById('showcaseProgress');
+  if (totalEl) totalEl.textContent = String(totalCards).padStart(2, '0');
 
-  gsap.to(track, {
-    x: -distance,
+  const distance = () => track.scrollWidth - window.innerWidth;
+
+  const st = gsap.to(track, {
+    x: () => -distance(),
     ease: 'none',
     scrollTrigger: {
       trigger: '.showcase__pin',
       start: 'top top',
-      end: `+=${distance}`,
+      end: () => `+=${distance()}`,
       pin: true,
-      scrub: 1,
+      scrub: 0.6,
       anticipatePin: 1,
       invalidateOnRefresh: true,
+      onUpdate: (self) => {
+        const idx = Math.min(totalCards - 1, Math.floor(self.progress * totalCards));
+        if (currentEl) currentEl.textContent = String(idx + 1).padStart(2, '0');
+        if (progressFill) progressFill.style.width = (self.progress * 100) + '%';
+      }
     }
   });
 }
