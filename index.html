@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="RC Innovations — Especialistas en drones profesionales y UAV. Tecnología de vuelo de grado industrial desde Barakaldo." />
+<title>RC Innovations · Professional Drone & UAV Specialist</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- Loader -->
+<div class="loader" id="loader">
+  <div class="loader__inner">
+    <svg class="loader__logo" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="44" font-family="Space Grotesk" font-weight="700" font-size="48" fill="white">RC</text>
+      <text x="62" y="44" font-family="Space Grotesk" font-weight="300" font-size="48" fill="white">INNOVATIONS</text>
+    </svg>
+    <div class="loader__bar"><div class="loader__fill"></div></div>
+    <div class="loader__count"><span id="loaderCount">0</span>%</div>
+  </div>
+</div>
+
+<!-- Custom Cursor -->
+<div class="cursor" id="cursor"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- Navigation -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#" class="nav__logo">
+      <span class="nav__logo-mark">RC</span>
+      <span class="nav__logo-text">INNOVATIONS</span>
+    </a>
+    <ul class="nav__menu">
+      <li><a href="#about" data-nav>Compañía</a></li>
+      <li><a href="#categories" data-nav>Catálogo</a></li>
+      <li><a href="#services" data-nav>Servicios</a></li>
+      <li><a href="#brands" data-nav>Marcas</a></li>
+      <li><a href="#contact" data-nav>Contacto</a></li>
+    </ul>
+    <a href="#contact" class="nav__cta">
+      <span>Hablemos</span>
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H8M17 7V16"/></svg>
+    </a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__bg">
+    <div class="hero__video" role="img" aria-label="Vista aérea de operación con dron"></div>
+    <div class="hero__overlay"></div>
+    <div class="hero__grid"></div>
+  </div>
+
+  <div class="hero__content">
+    <div class="hero__meta">
+      <span class="hero__tag"><span class="dot"></span> BARAKALDO · BIZKAIA</span>
+      <span class="hero__year">EST. 2014</span>
+    </div>
+
+    <h1 class="hero__title">
+      <span class="line"><span class="word">Professional</span></span>
+      <span class="line"><span class="word">Drone</span> <span class="word italic">&</span> <span class="word">UAV</span></span>
+      <span class="line"><span class="word">Specialists.</span></span>
+    </h1>
+
+    <p class="hero__sub">
+      Diseñamos, construimos y mantenemos sistemas aéreos no tripulados de grado profesional para industria, defensa y operaciones especializadas.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#categories" class="btn btn--primary magnetic">
+        <span>Explorar catálogo</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a href="#services" class="btn btn--ghost magnetic">
+        <span>Build your drone</span>
+      </a>
+    </div>
+
+    <div class="hero__scroll">
+      <span>SCROLL</span>
+      <div class="hero__scroll-line"></div>
+    </div>
+  </div>
+
+  <div class="hero__corner hero__corner--tl">N 43°17'54"</div>
+  <div class="hero__corner hero__corner--tr">W 02°59'17"</div>
+  <div class="hero__corner hero__corner--bl">UAV.SYS.READY</div>
+  <div class="hero__corner hero__corner--br">v2026.05</div>
+</section>
+
+<!-- MARQUEE BRANDS -->
+<section class="marquee-section">
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>DJI</span><span>·</span><span>T-MOTOR</span><span>·</span><span>EMAX</span><span>·</span><span>HOBBYWING</span><span>·</span><span>AUTEL</span><span>·</span><span>WALKERA</span><span>·</span><span>YUNEEC</span><span>·</span><span>PARROT</span><span>·</span><span>FRSKY</span><span>·</span><span>JETI</span><span>·</span><span>HACKER</span><span>·</span>
+      <span>DJI</span><span>·</span><span>T-MOTOR</span><span>·</span><span>EMAX</span><span>·</span><span>HOBBYWING</span><span>·</span><span>AUTEL</span><span>·</span><span>WALKERA</span><span>·</span><span>YUNEEC</span><span>·</span><span>PARROT</span><span>·</span><span>FRSKY</span><span>·</span><span>JETI</span><span>·</span><span>HACKER</span><span>·</span>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<section class="stats" id="stats">
+  <div class="container">
+    <div class="section-label">
+      <span class="section-label__num">01</span>
+      <span class="section-label__txt">Por los números</span>
+    </div>
+
+    <div class="stats__grid">
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-counter="12">0</div>
+        <div class="stat__plus">+</div>
+        <div class="stat__label">Años de experiencia</div>
+        <div class="stat__desc">Operando en el sector UAV desde 2014</div>
+      </div>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-counter="3500">0</div>
+        <div class="stat__plus">+</div>
+        <div class="stat__label">Referencias en stock</div>
+        <div class="stat__desc">El catálogo más extenso de la Península</div>
+      </div>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-counter="40">0</div>
+        <div class="stat__plus">+</div>
+        <div class="stat__label">Marcas oficiales</div>
+        <div class="stat__desc">DJI, T-Motor, Hobbywing, Emax y más</div>
+      </div>
+      <div class="stat" data-reveal>
+        <div class="stat__num" data-counter="24">0</div>
+        <div class="stat__suffix">H</div>
+        <div class="stat__label">Envío express</div>
+        <div class="stat__desc">Gratis a toda España peninsular</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT — sticky parallax -->
+<section class="about" id="about">
+  <div class="about__sticky">
+    <div class="container about__inner">
+      <div class="about__text">
+        <div class="section-label">
+          <span class="section-label__num">02</span>
+          <span class="section-label__txt">Quiénes somos</span>
+        </div>
+        <h2 class="about__title">
+          <span data-split>No vendemos drones.</span>
+          <span data-split class="muted">Construimos plataformas de vuelo.</span>
+        </h2>
+        <p class="about__body">
+          Desde nuestra base en Barakaldo, <strong>Unmanned Technology S.L.</strong> opera como uno de los referentes ibéricos en sistemas aéreos no tripulados. Trabajamos con fabricantes oficiales, montamos equipos a medida y damos soporte técnico real a operadores profesionales, integradores y administraciones.
+        </p>
+        <p class="about__body">
+          Cada plataforma sale de nuestro taller con la electrónica calibrada, los componentes probados y la documentación necesaria para volar en cumplimiento con la normativa AESA / EASA.
+        </p>
+        <div class="about__certs">
+          <div class="cert"><strong>AESA</strong><span>Operador registrado</span></div>
+          <div class="cert"><strong>EASA</strong><span>Clase C0–C6</span></div>
+          <div class="cert"><strong>ISO 9001</strong><span>Calidad certificada</span></div>
+        </div>
+      </div>
+      <div class="about__visual">
+        <div class="about__image about__image--1"></div>
+        <div class="about__image about__image--2"></div>
+        <div class="about__image about__image--3"></div>
+        <div class="about__circle"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CATEGORIES -->
+<section class="categories" id="categories">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">
+        <span class="section-label__num">03</span>
+        <span class="section-label__txt">Catálogo</span>
+      </div>
+      <h2 class="section-title"><span data-split>Siete líneas de producto.</span> <span data-split class="muted">Un único estándar de calidad.</span></h2>
+    </div>
+
+    <div class="cat-grid">
+      <a class="cat-card cat-card--lg" data-reveal style="--bg:url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1600&q=80')">
+        <div class="cat-card__content">
+          <span class="cat-card__num">01</span>
+          <h3>Multicópteros</h3>
+          <p>DJI · Autel · Walkera · Yuneec · Parrot</p>
+          <span class="cat-card__link">Ver gama →</span>
+        </div>
+      </a>
+      <a class="cat-card" data-reveal style="--bg:url('https://images.unsplash.com/photo-1508614589041-895b88991e3e?w=1200&q=80')">
+        <div class="cat-card__content">
+          <span class="cat-card__num">02</span>
+          <h3>Aircraft</h3>
+          <p>Eléctricos, planeadores, jets, FPV</p>
+          <span class="cat-card__link">Ver gama →</span>
+        </div>
+      </a>
+      <a class="cat-card" data-reveal style="--bg:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80')">
+        <div class="cat-card__content">
+          <span class="cat-card__num">03</span>
+          <h3>Electrónica</h3>
+          <p>Radios · Servos · ESCs · Flight Controllers</p>
+          <span class="cat-card__link">Ver gama →</span>
+        </div>
+      </a>
+      <a class="cat-card" data-reveal style="--bg:url('https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80')">
+        <div class="cat-card__content">
+          <span class="cat-card__num">04</span>
+          <h3>Motores</h3>
+          <p>T-Motor · Emax · Hacker · Hobbywing</p>
+          <span class="cat-card__link">Ver gama →</span>
+        </div>
+      </a>
+      <a class="cat-card cat-card--lg" data-reveal style="--bg:url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1600&q=80&sat=-100')">
+        <div class="cat-card__content">
+          <span class="cat-card__num">05</span>
+          <h3>Baterías</h3>
+          <p>LiPo · LiHV · LiFePO4 · Cargadores inteligentes</p>
+          <span class="cat-card__link">Ver gama →</span>
+        </div>
+      </a>
+      <a class="cat-card" data-reveal style="--bg:url('https://images.unsplash.com/photo-1521459467264-802e2ef3141f?w=1200&q=80')">
+        <div class="cat-card__content">
+          <span class="cat-card__num">06</span>
+          <h3>Cámaras y gimbals</h3>
+          <p>Estabilizadores y carga útil profesional</p>
+          <span class="cat-card__link">Ver gama →</span>
+        </div>
+      </a>
+      <a class="cat-card" data-reveal style="--bg:url('https://images.unsplash.com/photo-1487887235947-a955ef187fcc?w=1200&q=80')">
+        <div class="cat-card__content">
+          <span class="cat-card__num">07</span>
+          <h3>Accesorios</h3>
+          <p>Hélices · Fibra de carbono · Conectores</p>
+          <span class="cat-card__link">Ver gama →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- HORIZONTAL SCROLL — Showcase -->
+<section class="showcase" id="showcase">
+  <div class="showcase__pin">
+    <div class="showcase__intro">
+      <div class="section-label section-label--light">
+        <span class="section-label__num">04</span>
+        <span class="section-label__txt">Plataformas destacadas</span>
+      </div>
+      <h2 class="showcase__title">Construido para misiones reales</h2>
+    </div>
+    <div class="showcase__track" id="showcaseTrack">
+      <article class="prod">
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1524143986875-3b098d78b363?w=1400&q=80')"></div>
+        <div class="prod__info">
+          <span class="prod__sku">UAV-PRO/01</span>
+          <h3>Industrial Mapping</h3>
+          <p>Fotogrametría y cartografía RTK con autonomía hasta 55 min.</p>
+          <span class="prod__price">Desde 7.490 €</span>
+        </div>
+      </article>
+      <article class="prod">
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1506947411487-a56738267384?w=1400&q=80')"></div>
+        <div class="prod__info">
+          <span class="prod__sku">UAV-PRO/02</span>
+          <h3>Thermal Inspection</h3>
+          <p>Cámara radiométrica + zoom 32× para inspección de redes.</p>
+          <span class="prod__price">Desde 12.200 €</span>
+        </div>
+      </article>
+      <article class="prod">
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1579829366248-204fe8413f31?w=1400&q=80')"></div>
+        <div class="prod__info">
+          <span class="prod__sku">UAV-PRO/03</span>
+          <h3>Heavy Lift</h3>
+          <p>Hexacóptero de carga útil 15 kg para operaciones logísticas.</p>
+          <span class="prod__price">Bajo presupuesto</span>
+        </div>
+      </article>
+      <article class="prod">
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1473968512647-3e447244af8f?w=1400&q=80')"></div>
+        <div class="prod__info">
+          <span class="prod__sku">UAV-PRO/04</span>
+          <h3>FPV Racing Build</h3>
+          <p>Montaje a medida con frame de fibra y motores T-Motor F60.</p>
+          <span class="prod__price">Desde 1.890 €</span>
+        </div>
+      </article>
+      <article class="prod">
+        <div class="prod__media" style="background-image:url('https://images.unsplash.com/photo-1527977966376-1c8408f9f108?w=1400&q=80')"></div>
+        <div class="prod__info">
+          <span class="prod__sku">UAV-PRO/05</span>
+          <h3>Survey & SAR</h3>
+          <p>Configuración búsqueda y rescate con cámara dual visual + IR.</p>
+          <span class="prod__price">Consultar</span>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES — process -->
+<section class="services" id="services">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">
+        <span class="section-label__num">05</span>
+        <span class="section-label__txt">We build your drone</span>
+      </div>
+      <h2 class="section-title"><span data-split>Del primer briefing</span> <span data-split class="muted">al primer despegue.</span></h2>
+    </div>
+
+    <div class="process">
+      <div class="process__line"><div class="process__line-fill" id="processLine"></div></div>
+      <div class="process__steps">
+        <div class="step" data-reveal>
+          <div class="step__num">01</div>
+          <h3>Briefing técnico</h3>
+          <p>Definimos misión, payload, autonomía y normativa aplicable a tu operación.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step__num">02</div>
+          <h3>Diseño & BOM</h3>
+          <p>Seleccionamos frame, motores, ESCs, FC y electrónica según el perfil de vuelo.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step__num">03</div>
+          <h3>Montaje en taller</h3>
+          <p>Ensamblaje en banco, calibración de sensores y configuración firmware.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step__num">04</div>
+          <h3>Test de vuelo</h3>
+          <p>Pruebas reales en campo, ajustes finos y validación con el cliente.</p>
+        </div>
+        <div class="step" data-reveal>
+          <div class="step__num">05</div>
+          <h3>Soporte continuo</h3>
+          <p>Mantenimiento, repuestos y formación a tus pilotos durante toda la vida útil.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRANDS WALL -->
+<section class="brands" id="brands">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">
+        <span class="section-label__num">06</span>
+        <span class="section-label__txt">Distribuidores oficiales</span>
+      </div>
+      <h2 class="section-title"><span data-split>Las marcas</span> <span data-split class="muted">que vuelan con nosotros.</span></h2>
+    </div>
+
+    <div class="brand-grid">
+      <div class="brand-cell" data-reveal>DJI</div>
+      <div class="brand-cell" data-reveal>T-MOTOR</div>
+      <div class="brand-cell" data-reveal>EMAX</div>
+      <div class="brand-cell" data-reveal>HOBBYWING</div>
+      <div class="brand-cell" data-reveal>AUTEL</div>
+      <div class="brand-cell" data-reveal>WALKERA</div>
+      <div class="brand-cell" data-reveal>YUNEEC</div>
+      <div class="brand-cell" data-reveal>PARROT</div>
+      <div class="brand-cell" data-reveal>FRSKY</div>
+      <div class="brand-cell" data-reveal>JETI</div>
+      <div class="brand-cell" data-reveal>HACKER</div>
+      <div class="brand-cell" data-reveal>TAROT</div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="testimonial">
+  <div class="container">
+    <blockquote>
+      <p data-split-quote>"Nos entregaron un equipo de mapping listo para volar con calibración de campo incluida. La diferencia con un proveedor genérico se nota desde la primera misión."</p>
+      <footer>
+        <span class="testimonial__name">Iker Mendizabal</span>
+        <span class="testimonial__role">Ingeniería Topográfica · Sondika</span>
+      </footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="container">
+    <div class="cta__inner">
+      <h2 class="cta__title">
+        <span data-split>¿Tu próxima</span>
+        <span data-split>misión de vuelo</span>
+        <span data-split class="muted">empieza aquí?</span>
+      </h2>
+      <p class="cta__sub">Cuéntanos qué necesitas. Te respondemos en menos de 24h con propuesta técnica y presupuesto cerrado.</p>
+      <div class="cta__actions">
+        <a href="mailto:info@rc-innovations.es" class="btn btn--primary btn--lg magnetic">
+          <span>info@rc-innovations.es</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="tel:+34946022490" class="btn btn--ghost btn--lg magnetic">
+          <span>+34 946 022 490</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__top">
+      <div class="footer__brand">
+        <div class="footer__logo">RC<span>INNOVATIONS</span></div>
+        <p>Especialistas en sistemas aéreos no tripulados.<br/>Operando desde Barakaldo, Bizkaia.</p>
+      </div>
+      <div class="footer__cols">
+        <div class="footer__col">
+          <h4>Catálogo</h4>
+          <a href="#">Multicópteros</a>
+          <a href="#">Aircraft</a>
+          <a href="#">Electrónica</a>
+          <a href="#">Motores</a>
+          <a href="#">Baterías</a>
+        </div>
+        <div class="footer__col">
+          <h4>Servicios</h4>
+          <a href="#">We build your drone</a>
+          <a href="#">Mantenimiento</a>
+          <a href="#">Formación</a>
+          <a href="#">Soporte técnico</a>
+        </div>
+        <div class="footer__col">
+          <h4>Contacto</h4>
+          <a href="mailto:info@rc-innovations.es">info@rc-innovations.es</a>
+          <a href="tel:+34946022490">+34 946 022 490</a>
+          <p>Susunaga, 17<br/>48903 Barakaldo · Bizkaia</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <span>© 2026 Unmanned Technology S.L. · CIF ESB95789889</span>
+      <span class="footer__legal">
+        <a href="#">Aviso legal</a>
+        <a href="#">Privacidad</a>
+        <a href="#">Cookies</a>
+      </span>
+    </div>
+    <div class="footer__big">RC INNOVATIONS</div>
+  </div>
+</footer>
+
+<!-- Libraries (CDN oficiales) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Logs locales
+*.log
+
+# Sin dependencias npm — todo vía CDN
+node_modules/
