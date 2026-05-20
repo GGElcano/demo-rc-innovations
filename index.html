@@ -17,10 +17,10 @@
 <!-- Loader -->
 <div class="loader" id="loader">
   <div class="loader__inner">
-    <svg class="loader__logo" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
-      <text x="0" y="44" font-family="Space Grotesk" font-weight="700" font-size="48" fill="white">RC</text>
-      <text x="62" y="44" font-family="Space Grotesk" font-weight="300" font-size="48" fill="white">INNOVATIONS</text>
-    </svg>
+    <div class="loader__logo">
+      <span class="loader__logo-mark">RC</span>
+      <span class="loader__logo-text">INNOVATIONS</span>
+    </div>
     <div class="loader__bar"><div class="loader__fill"></div></div>
     <div class="loader__count"><span id="loaderCount">0</span>%</div>
   </div>
@@ -592,7 +592,20 @@
         <a href="#">Cookies</a>
       </span>
     </div>
-    <div class="footer__big">RC INNOVATIONS</div>
+    <svg class="footer__big" viewBox="0 0 1620 230" preserveAspectRatio="xMidYMid meet" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="footerBigGradient" x1="0" x2="0" y1="0" y2="1">
+          <stop offset="0%" stop-color="rgba(255,255,255,0.08)"/>
+          <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+        </linearGradient>
+      </defs>
+      <text x="810" y="195" text-anchor="middle"
+            font-family="Space Grotesk, sans-serif"
+            font-weight="700"
+            font-size="220"
+            letter-spacing="-8"
+            fill="url(#footerBigGradient)">RC INNOVATIONS</text>
+    </svg>
   </div>
 </footer>
 
